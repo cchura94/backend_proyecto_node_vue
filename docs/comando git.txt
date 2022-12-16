@@ -1,0 +1,37 @@
+1. Descargar e Instalar GIT
+    https://git-scm.com/
+
+2. Configurar GIT (username, email)
+    > git config --global user.name "Cristian"
+    > git config --global user.email "cchura.cpc@gmail.com"
+-------------------------------------------------------------
+Crear una Cuenta en (GITHUB, GITLAB, BITBUCKET)
+-------------------------------------------------------------
+
+    ARANCAR CON GITHUB
+
+crear un archivo (.gitignore)
+crear un archivo (README.md)
+*****************************************
+Si ya existe el repositorio (CLONAR)
+    se require la direccion del repositorio
+    
+    > git clone direccion
+
+Si no existe el repositorio (INICIAR UNO NUEVO)
+
+    > git init
+
+Crear un repositorio remoto en (GITHUB) y
+    registrar el repositorio remotocon el local
+
+    > git remote add origin https://github.com/cchura94/backend_proyecto_node_vue.git
+
+    
+******************************************
+
+git add .
+
+
+
+
