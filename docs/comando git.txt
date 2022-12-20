@@ -32,6 +32,6 @@ Crear un repositorio remoto en (GITHUB) y
 
 git add .
 
+git commit -m "Proyecto de arranque de NODE"
 
-
-
+git push origin master
