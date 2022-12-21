@@ -2,8 +2,8 @@ POST http://127.0.0.1:3000/api/auth/registro
 Content-Type: application/json
 
 {
-    "nombre": "Pedro",
+    "nombre": "Ana",
     "apellidos": "Pruebas",
-    "email": "pedro@gmail.com",
-    "password": "pedro54321"
+    "email": "ana@gmail.com",
+    "password": "ana54321"
 }

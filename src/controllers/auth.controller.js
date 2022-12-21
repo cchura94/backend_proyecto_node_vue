@@ -1,4 +1,5 @@
 import models from "./../models"
+import bcrypt from "bcrypt"
 
 export default {
     async registro(req, res){
@@ -7,13 +8,15 @@ export default {
         if(email){
             let user = await models.User.findOne({
                 where: {
-                    email:req.body.email
+                    email:email
                 }
             })
 
             if(!user){
                 // cifrar el passowrd
-                await models.User.create({nombre, apellidos, email, password})
+                const hash = await bcrypt.hash(password, 12);
+
+                await models.User.create({nombre, apellidos, email, password:hash})
                 return res.status(200).send({
                     mensaje: "Usuario registrado"
                 })

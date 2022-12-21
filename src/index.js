@@ -2,10 +2,13 @@
 // const express= require("express");
 import express from "express"
 import { Route } from "./routes";
-
+import cors from "cors"
 
 // arrancamos los módulos
 const app = express();
+
+// CORS
+app.use(cors())
 
 // variables auxiliares
 const PORT = process.env.PORT || 3000
