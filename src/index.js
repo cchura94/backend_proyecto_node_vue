@@ -7,6 +7,9 @@ import cors from "cors"
 // arrancamos los módulos
 const app = express();
 
+// carga de archivos estaticos (VUE)
+app.use(express.static('public'))
+
 // CORS
 app.use(cors())
 
