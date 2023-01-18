@@ -1,0 +1,7 @@
+npx sequelize-cli model:generate --name Producto --attributes nombre:string,stock:integer,precio:decimal,imagen:string,estado:boolean,descripcion:text,categoriaId:integer
+
+npx sequelize-cli model:generate --name Cliente --attributes nombre_completo:string,telefono:string,correo:string
+
+npx sequelize-cli model:generate --name Pedido --attributes fecha:date,estado:integer,nro_fact:string,clienteId:integer
+
+

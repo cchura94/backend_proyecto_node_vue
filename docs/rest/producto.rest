@@ -1,0 +1,35 @@
+### lista categoria
+GET http://127.0.0.1:3000/api/categoria
+### lista producto
+GET http://127.0.0.1:3000/api/producto?page=2&limit=3
+
+### guardar producto
+POST http://127.0.0.1:3000/api/producto
+Content-Type: application/json
+
+{
+    "nombre": "TECLADO",
+    "stock": 24,
+    "precio": 159,
+    "estado": true,
+    "descripcion": "Teclado marca DELL",
+    "categoriaId": 4
+}
+
+### mostrar
+GET http://127.0.0.1:3000/api/producto/2
+Accept: application/json
+
+### actualizar
+PUT http://127.0.0.1:3000/api/producto/2
+Accept: application/json
+Content-Type: application/json
+
+{
+    "nombre": "TECLADO",
+    "stock": 20,
+    "precio": 199,
+    "estado": true,
+    "descripcion": "Teclado marca DELL y HP",
+    "categoriaId": 4
+}
