@@ -1,1 +1,0 @@
-import{h as t}from"./index-53184102.js";const a={listar:(r=1,o=10)=>t().get(`/producto?page=${r}&limit=${o}`),guardar:r=>t().post("/producto",r),mostrar:r=>t().get(`/producto/${r}`),modificar:(r,o)=>t().put(`/producto/${r}`,o),eliminar:r=>t().delete(`/producto/${r}`),actualizarImagen:(r,o)=>t().post(`/producto/${r}/actualizar-imagen`,o)};export{a as p};
