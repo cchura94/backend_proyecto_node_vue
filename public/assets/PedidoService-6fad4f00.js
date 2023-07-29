@@ -1,1 +1,0 @@
-import{h as r}from"./index-a5f020d6.js";const a={listar:(e=1,t=10)=>r().get(`/pedido?page=${e}&limit=${t}`),guardar:e=>r().post("/pedido",e),mostrar:e=>r().get(`/pedido/${e}`),modificar:(e,t)=>r().put(`/pedido/${e}`,t),eliminar:e=>r().delete(`/pedido/${e}`),actualizarImagen:(e,t)=>r().post(`/pedido/${e}/actualizar-imagen`,t)};export{a as p};
